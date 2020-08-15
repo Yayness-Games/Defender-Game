@@ -682,10 +682,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1955165199, guid: 441f36df5b28e2949a30e6527647ad78, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -144.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955165199, guid: 441f36df5b28e2949a30e6527647ad78, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -45
+      objectReference: {fileID: 0}
     - target: {fileID: 1783395507013686760, guid: 441f36df5b28e2949a30e6527647ad78,
         type: 3}
       propertyPath: m_Name
       value: Game Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792592834969463647, guid: 441f36df5b28e2949a30e6527647ad78,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 134.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792592834969463647, guid: 441f36df5b28e2949a30e6527647ad78,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 5196927863614210258, guid: 441f36df5b28e2949a30e6527647ad78,
         type: 3}
@@ -967,6 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af5293dd86696d418cf849cdb4d3f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTimeBeforeSpawns: 0
   waveConfigs:
   - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
   - {fileID: 11400000, guid: e88867133a357b6498483e022ad76cf5, type: 2}
