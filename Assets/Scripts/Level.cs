@@ -7,14 +7,21 @@ public class Level : MonoBehaviour
 {
 
     [SerializeField] float delayInSeconds = 2f;
+    int currentSceneIndex;
+
+    void Start()
+    {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    }
 
     public void LoadStartMenu()
     {
         SceneManager.LoadScene(0);
     }
-    public void LoadGame()
+
+    public void LoadLevel1()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Level 1");
         FindObjectOfType<GameSession>().ResetGame();
     }
 
@@ -32,5 +39,10 @@ public class Level : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 }

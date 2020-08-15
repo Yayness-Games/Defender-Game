@@ -4,19 +4,36 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-
+    [SerializeField] float waitTimeBeforeSpawns = 0f;
     [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] int startingWave = 0;
-    [SerializeField] bool looping = false;
+    [SerializeField] bool looping = true;
+    [SerializeField] bool loadNextLevelAfterThis = false;
+    [SerializeField] float TimeBeforeLoadNextLevel = 0;
 
-    // Use this for initialization
+    Level level;
+
     IEnumerator Start()
+    {
+        level = FindObjectOfType<Level>();
+        yield return new WaitForSeconds(waitTimeBeforeSpawns);
+        StartCoroutine(StartSpawning());
+    }
+
+    IEnumerator StartSpawning()
     {
         do
         {
             yield return StartCoroutine(SpawnAllWaves());
         }
         while (looping);
+
+        yield return new WaitForSeconds(TimeBeforeLoadNextLevel);
+
+        if (loadNextLevelAfterThis)
+        {
+            level.LoadNextLevel();
+        }
     }
 
     private IEnumerator SpawnAllWaves()
@@ -41,4 +58,8 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    private IEnumerator WaitinSeconds(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+    }
 }
