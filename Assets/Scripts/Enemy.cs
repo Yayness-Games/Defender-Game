@@ -71,6 +71,7 @@ public class Enemy : MonoBehaviour
 
     private void EnemyDeath()
     {
+        FindObjectOfType<Level>().SubtractEnemy();
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
         Destroy(gameObject);
         GameObject explosion = Instantiate(explosionVFX, transform.position, Quaternion.identity);

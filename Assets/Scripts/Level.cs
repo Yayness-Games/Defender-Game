@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
-
+    [SerializeField] int Enemies;
     [SerializeField] float delayInSeconds = 2f;
     int currentSceneIndex;
 
@@ -44,5 +44,24 @@ public class Level : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    public void LoadTestArea()
+    {
+        SceneManager.LoadScene("Test Area");
+    }
+
+    public void AddEnemies(int numberOfEnemies)
+    {
+        Enemies += numberOfEnemies;
+    }
+
+    public void SubtractEnemy()
+    {
+        Enemies -= 1;
+        if (Enemies <= 0)
+        {
+            LoadNextLevel();
+        }
     }
 }

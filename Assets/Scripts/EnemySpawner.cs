@@ -7,33 +7,26 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float waitTimeBeforeSpawns = 0f;
     [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] int startingWave = 0;
-    [SerializeField] bool looping = true;
-    [SerializeField] bool loadNextLevelAfterThis = false;
-    [SerializeField] float TimeBeforeLoadNextLevel = 0;
+
+    int enemiesInWave;
 
     Level level;
 
     IEnumerator Start()
     {
         level = FindObjectOfType<Level>();
+        for (int waveIndex = startingWave; waveIndex < waveConfigs.Count; waveIndex++)
+        {
+            var currWaveCount = waveConfigs[waveIndex];
+            level.AddEnemies(currWaveCount.GetNumberOfEnemies());
+        }
         yield return new WaitForSeconds(waitTimeBeforeSpawns);
         StartCoroutine(StartSpawning());
     }
 
     IEnumerator StartSpawning()
     {
-        do
-        {
-            yield return StartCoroutine(SpawnAllWaves());
-        }
-        while (looping);
-
-        yield return new WaitForSeconds(TimeBeforeLoadNextLevel);
-
-        if (loadNextLevelAfterThis)
-        {
-            level.LoadNextLevel();
-        }
+        yield return StartCoroutine(SpawnAllWaves());
     }
 
     private IEnumerator SpawnAllWaves()

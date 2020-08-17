@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameSession : MonoBehaviour
 {
-
     int score = 0;
 
     private void Awake()
@@ -34,6 +33,7 @@ public class GameSession : MonoBehaviour
     public void AddToScore(int scoreValue)
     {
         score += scoreValue;
+        Debug.Log(score);
     }
 
     public void ResetGame()

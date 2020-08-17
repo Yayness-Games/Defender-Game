@@ -682,28 +682,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1955165199, guid: 441f36df5b28e2949a30e6527647ad78, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -144.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1955165199, guid: 441f36df5b28e2949a30e6527647ad78, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -45
-      objectReference: {fileID: 0}
     - target: {fileID: 1783395507013686760, guid: 441f36df5b28e2949a30e6527647ad78,
         type: 3}
       propertyPath: m_Name
       value: Game Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792592834969463647, guid: 441f36df5b28e2949a30e6527647ad78,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 134.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792592834969463647, guid: 441f36df5b28e2949a30e6527647ad78,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 5196927863614210258, guid: 441f36df5b28e2949a30e6527647ad78,
         type: 3}
@@ -954,6 +936,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8481323635723204336, guid: 82b7e08167a8ab74c9b3c9cfe910930e,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82b7e08167a8ab74c9b3c9cfe910930e, type: 3}
 --- !u!1 &2179306468093486504
@@ -993,10 +980,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 69fcd288552d6bf4fad1b7e4025de80d, type: 2}
   - {fileID: 11400000, guid: 687b35e808f82c74d818a4558f868b41, type: 2}
   - {fileID: 11400000, guid: cf9d4709588d55b448bc90c81f007f22, type: 2}
-  startingWave: 0
-  looping: 0
-  loadNextLevelAfterThis: 1
-  TimeBeforeLoadNextLevel: 6
+  startingWave: 5
 --- !u!4 &2179306468093486506
 Transform:
   m_ObjectHideFlags: 0

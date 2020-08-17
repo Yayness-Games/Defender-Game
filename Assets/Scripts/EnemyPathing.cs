@@ -43,6 +43,7 @@ public class EnemyPathing : MonoBehaviour
         }
         else
         {
+            FindObjectOfType<Level>().SubtractEnemy();
             Destroy(gameObject);
         }
     }
