@@ -975,6 +975,7 @@ MonoBehaviour:
   waitTimeBeforeSpawns: 0
   waveConfigs:
   - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 69fcd288552d6bf4fad1b7e4025de80d, type: 2}
   - {fileID: 11400000, guid: e88867133a357b6498483e022ad76cf5, type: 2}
   - {fileID: 11400000, guid: 4d958f81a7cb225438ec2fb1b3c1e28c, type: 2}
   - {fileID: 11400000, guid: 69fcd288552d6bf4fad1b7e4025de80d, type: 2}
