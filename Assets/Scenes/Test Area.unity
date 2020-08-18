@@ -682,28 +682,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1955165199, guid: 441f36df5b28e2949a30e6527647ad78, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -144.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1955165199, guid: 441f36df5b28e2949a30e6527647ad78, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -45
-      objectReference: {fileID: 0}
     - target: {fileID: 1783395507013686760, guid: 441f36df5b28e2949a30e6527647ad78,
         type: 3}
       propertyPath: m_Name
       value: Game Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792592834969463647, guid: 441f36df5b28e2949a30e6527647ad78,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 134.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792592834969463647, guid: 441f36df5b28e2949a30e6527647ad78,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 5196927863614210258, guid: 441f36df5b28e2949a30e6527647ad78,
         type: 3}
@@ -988,14 +970,7 @@ MonoBehaviour:
   waitTimeBeforeSpawns: 0
   waveConfigs:
   - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
-  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
-  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
-  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
-  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
   startingWave: 0
-  looping: 0
-  loadNextLevelAfterThis: 0
-  TimeBeforeLoadNextLevel: 6
 --- !u!4 &2179306468093486506
 Transform:
   m_ObjectHideFlags: 0

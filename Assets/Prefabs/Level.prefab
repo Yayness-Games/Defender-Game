@@ -43,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8d58155469b5b4faa0f779347ee11b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enemies: 0
+  delayInSecondsAfterDying: 2
+  delayInSecondsForSplash: 1.4

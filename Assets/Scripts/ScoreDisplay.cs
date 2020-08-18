@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class ScoreDisplay : MonoBehaviour
 {
 
-	Text scoreText;
-	GameSession gameSession;
+	[SerializeField] Text scoreText;
+	[SerializeField] GameSession gameSession;
 
-	// Use this for initialization
-	void Start()
+    // Use this for initialization
+    void Start()
 	{
 		scoreText = GetComponent<Text>();
 		gameSession = FindObjectOfType<GameSession>();
@@ -19,6 +19,6 @@ public class ScoreDisplay : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		scoreText.text = gameSession.GetScore().ToString();
+		scoreText.text = FindObjectOfType<GameSession>().GetScore().ToString();
 	}
 }

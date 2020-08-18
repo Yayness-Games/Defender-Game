@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1955165199}
   - component: {fileID: 1955165201}
   - component: {fileID: 1955165200}
-  - component: {fileID: 678974129}
+  - component: {fileID: 990787990}
   m_Layer: 5
   m_Name: Score Text
   m_TagString: Untagged
@@ -80,7 +80,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 00000000
---- !u!114 &678974129
+--- !u!114 &990787990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,6 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68cd4cbb87e32d439bded087cdaebe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  gameSession: {fileID: 0}
 --- !u!1 &1783395507013686760
 GameObject:
   m_ObjectHideFlags: 0
