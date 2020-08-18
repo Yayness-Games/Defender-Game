@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Level : MonoBehaviour
 {
     [SerializeField] int Enemies;
-    [SerializeField] float delayInSecondsAfterDying = 2f;
-    [SerializeField] float delayInSecondsForSplash = 2f;
+    [SerializeField] float delayInSeconds = 2f;
+
     int currentSceneIndex;
 
     void Start()
@@ -33,7 +33,7 @@ public class Level : MonoBehaviour
 
     IEnumerator WaitAndLoadGameOver()
     {
-        yield return new WaitForSeconds(delayInSecondsAfterDying);
+        yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene("Game Over Menu");
     }
     
@@ -42,8 +42,9 @@ public class Level : MonoBehaviour
         Application.Quit();
     }
 
-    public void LoadNextLevel()
+    IEnumerator WaitAndLoadNextLevel()
     {
+        yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
@@ -62,7 +63,7 @@ public class Level : MonoBehaviour
         Enemies -= 1;
         if (Enemies <= 0)
         {
-            LoadNextLevel();
+            StartCoroutine(WaitAndLoadNextLevel());
         }
     }
 }

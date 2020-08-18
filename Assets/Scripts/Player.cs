@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     // configuration parameters
     [Header("Hacks")]
-    [SerializeField] bool invincible;
+    [SerializeField] bool invincible = false;
     [Header("Player")]
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 1f;
