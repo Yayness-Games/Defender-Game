@@ -190,6 +190,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8222021060747157370, guid: e08a0eeddfb600044ad1a553276a096d,
+        type: 3}
+      propertyPath: health
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e08a0eeddfb600044ad1a553276a096d, type: 3}
 --- !u!1001 &116663291
@@ -987,12 +992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitTimeBeforeSpawns: 0
   waveConfigs:
-  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
-  - {fileID: 11400000, guid: e88867133a357b6498483e022ad76cf5, type: 2}
-  - {fileID: 11400000, guid: 4d958f81a7cb225438ec2fb1b3c1e28c, type: 2}
   - {fileID: 11400000, guid: 69fcd288552d6bf4fad1b7e4025de80d, type: 2}
-  - {fileID: 11400000, guid: 687b35e808f82c74d818a4558f868b41, type: 2}
-  - {fileID: 11400000, guid: cf9d4709588d55b448bc90c81f007f22, type: 2}
   startingWave: 0
 --- !u!4 &2179306468093486506
 Transform:

@@ -113,8 +113,8 @@ MonoBehaviour:
   health: 200
   scoreValue: 100
   shotCounter: 0
-  minTimeBetweenShots: 1
-  maxTimeBetweenShots: 3
+  minTimeBetweenShots: 1.752
+  maxTimeBetweenShots: 2.9
   projectile: {fileID: 2137573522465312092, guid: 6d06fa82b35f77644ae7a76632e426f5,
     type: 3}
   projectileSpeed: 5
