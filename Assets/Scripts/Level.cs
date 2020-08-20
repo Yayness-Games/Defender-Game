@@ -46,6 +46,7 @@ public class Level : MonoBehaviour
     {
         yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene(currentSceneIndex + 1);
+        FindObjectOfType<GameSession>().AddToLevel();
     }
 
     public void LoadTestArea()

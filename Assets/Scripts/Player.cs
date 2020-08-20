@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
         Move();
         Fire();
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (invincible == false)
@@ -98,6 +99,7 @@ public class Player : MonoBehaviour
         var newYPos = Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);
         transform.position = new Vector2(newXPos, newYPos);
     }
+
     private void SetUpMoveBoundaries()
     {
         Camera gameCamera = Camera.main;

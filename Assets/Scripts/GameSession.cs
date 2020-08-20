@@ -6,6 +6,7 @@ using TMPro;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int score = 0;
+    [SerializeField] int level = 0;
 
     private void Awake()
     {
@@ -40,4 +41,13 @@ public class GameSession : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public int GetLevel()
+    {
+        return level;
+    }
+
+    public void AddToLevel()
+    {
+        level += 1;
+    }
 }
