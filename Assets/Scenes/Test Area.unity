@@ -970,6 +970,15 @@ MonoBehaviour:
   waitTimeBeforeSpawns: 0
   waveConfigs:
   - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
+  - {fileID: 11400000, guid: 05f6fd419bf858247821b98f8d4986f4, type: 2}
   startingWave: 0
 --- !u!4 &2179306468093486506
 Transform:

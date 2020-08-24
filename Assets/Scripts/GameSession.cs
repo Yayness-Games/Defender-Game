@@ -8,6 +8,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] int score = 0;
     [SerializeField] int level = 1;
 
+
     private void Awake()
     {
         SetUpSingleton();
