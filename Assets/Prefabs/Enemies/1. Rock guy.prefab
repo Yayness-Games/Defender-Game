@@ -117,7 +117,7 @@ MonoBehaviour:
   maxTimeBetweenShots: 10
   projectile: {fileID: 2137573522465312092, guid: 11b702f05f3e2ad45a7ab46d9d1eaa13,
     type: 3}
-  projectileSpeed: 2.75
+  projectileSpeed: 1.5
   explosionVFX: {fileID: 8699830588819135513, guid: 15e892dd3397ee64da791ddba93c680c,
     type: 3}
   durationOfExplosion: 1
