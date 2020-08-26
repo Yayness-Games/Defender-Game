@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcddce8ae6140e34e8e87c5ef745662a, type: 3}
-  m_Name: W6L1
+  m_Name: L8W1
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 523461193869032416, guid: d65afe5e275c5c44f9292afdf6f0202b,
+  enemyPrefab: {fileID: 523461193869032416, guid: 5adf454a241976447b7349e06dc6b929,
     type: 3}
-  pathPrefab: {fileID: 1043509835402494993, guid: 3f0d1d4d906d3214fa1e136ca12e6373,
+  pathPrefab: {fileID: 3540782406736775465, guid: bbecc77b21e997b4d83b762cb466daad,
     type: 3}
-  timeBetweenSpawns: 0.6
+  timeBetweenSpawns: 2.7
   spawnRandomFactor: 0.3
-  numberOfEnemies: 15
-  moveSpeed: 3
+  numberOfEnemies: 7
+  moveSpeed: 0.7

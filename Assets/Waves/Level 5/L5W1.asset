@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcddce8ae6140e34e8e87c5ef745662a, type: 3}
   m_Name: L5W1
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 523461193869032416, guid: feb1bf1d41e67804d8ddc9f70996c8f5,
+  enemyPrefab: {fileID: 523461193869032416, guid: 48f916351af401d42936beabb36eb74f,
     type: 3}
-  pathPrefab: {fileID: 3540782406736775465, guid: 5c720701844763b4f9e7f5cc431d333d,
+  pathPrefab: {fileID: 3540782406736775465, guid: bbecc77b21e997b4d83b762cb466daad,
     type: 3}
-  timeBetweenSpawns: 1.7
+  timeBetweenSpawns: 1
   spawnRandomFactor: 0.3
-  numberOfEnemies: 5
-  moveSpeed: 4.13
+  numberOfEnemies: 10
+  moveSpeed: 3.3

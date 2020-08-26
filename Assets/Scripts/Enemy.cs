@@ -34,12 +34,12 @@ public class Enemy : MonoBehaviour
 
     private void CountDownAndShoot()
     {
-        shotCounter -= Time.deltaTime;
         if (shotCounter <= 0f)
         {
             Fire();
             shotCounter = Random.Range(minTimeBetweenShots, maxTimeBetweenShots);
         }
+        shotCounter -= Time.deltaTime;
     }
 
     private void Fire()
