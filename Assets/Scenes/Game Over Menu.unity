@@ -447,15 +447,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Over Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8720573342174401118, guid: 50a234a3f91a8304ab65e5f07acd5924,
+    - target: {fileID: 8720573342174401117, guid: 50a234a3f91a8304ab65e5f07acd5924,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Level, Assembly-CSharp
+      propertyPath: m_AnchoredPosition.y
+      value: -93.1
       objectReference: {fileID: 0}
-    - target: {fileID: 8720573342174401118, guid: 50a234a3f91a8304ab65e5f07acd5924,
+    - target: {fileID: 8720573342174401117, guid: 50a234a3f91a8304ab65e5f07acd5924,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel1
+      propertyPath: m_SizeDelta.y
+      value: -775.91595
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720573342533058212, guid: 50a234a3f91a8304ab65e5f07acd5924,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -229.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720573342533058212, guid: 50a234a3f91a8304ab65e5f07acd5924,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -766.72485
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720573342540075093, guid: 50a234a3f91a8304ab65e5f07acd5924,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720573342540075093, guid: 50a234a3f91a8304ab65e5f07acd5924,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.088287614
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720573342540075093, guid: 50a234a3f91a8304ab65e5f07acd5924,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.088287614
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720573342540075093, guid: 50a234a3f91a8304ab65e5f07acd5924,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4279703488
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50a234a3f91a8304ab65e5f07acd5924, type: 3}
