@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField] float maxHealth;
-    [SerializeField] float currentHealth;
+    [SerializeField] float MaxHealth;
+    [SerializeField] float CurrentHealth;
 
     Player player;
 
+    // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<Player>();
-        maxHealth = player.GetHealth();
-        currentHealth = player.GetHealth();
+        MaxHealth = player.GetHealth();
+        CurrentHealth = player.GetHealth();
     }
 
+    // Update is called once per frame
     void Update()
     {
-        currentHealth = player.GetHealth();
+        CurrentHealth = player.GetHealth();
+        transform.localScale = new Vector3(CurrentHealth / MaxHealth, 1.0f, 1.0f);
 
-        transform.localScale = new Vector3(currentHealth / maxHealth, 1.0f, 1.0f);
     }
 }

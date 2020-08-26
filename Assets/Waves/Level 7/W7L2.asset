@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcddce8ae6140e34e8e87c5ef745662a, type: 3}
-  m_Name: W6L5
+  m_Name: W7L2
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 523461193869032416, guid: 48f916351af401d42936beabb36eb74f,
+  enemyPrefab: {fileID: 523461193869032416, guid: d65afe5e275c5c44f9292afdf6f0202b,
     type: 3}
-  pathPrefab: {fileID: 8109608295624643420, guid: 57d825141c394f64ca60be93fdaa7ce6,
+  pathPrefab: {fileID: 955235059972607505, guid: b154991ec234c2641b69d8102f1daa69,
     type: 3}
-  timeBetweenSpawns: 1.75
+  timeBetweenSpawns: 0.6
   spawnRandomFactor: 0.3
-  numberOfEnemies: 10
-  moveSpeed: 4
+  numberOfEnemies: 15
+  moveSpeed: 3
