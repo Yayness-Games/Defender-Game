@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Awake()
+    [SerializeField] float minTimeUntilExplode;
+    [SerializeField] float maxTimeUntilExplode;
+    [SerializeField] GameObject explosionPrefab;
+
+    private void Start()
     {
-        GetComponent<CircleCollider2D>().isTrigger = false;
+        float timeUntilExplode = Random.Range(minTimeUntilExplode, maxTimeUntilExplode);
+        StartCoroutine(WaitAndExplode(timeUntilExplode));
     }
 
-    public void SetRadius(float radius)
+    IEnumerator WaitAndExplode(float explosionDelay)
     {
-        GetComponent<CircleCollider2D>().radius = radius;
-    }
-
-    public void Explode()
-    {
-        GetComponent<CircleCollider2D>().isTrigger = true;
+        yield return new WaitForSeconds(explosionDelay);
+        GameObject explosion = Instantiate(
+            explosionPrefab,
+            transform.position,
+            Quaternion.identity)
+            as GameObject;
+        Destroy(gameObject);
     }
 }

@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 200
+  waitBeforeDestroyed: 0
 --- !u!50 &7426425673237105545
 Rigidbody2D:
   serializedVersion: 4
@@ -184,6 +185,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   scoreValue: 0
-  explosionRadius: 5
-  explosionPrefab: {fileID: 6306599773692360603, guid: 8c64baa3df1c0204db47f5ab0267c31e,
+  explosionPrefab: {fileID: 2184315332553511625, guid: a6432c6214d12f646853b3f68d472f00,
     type: 3}

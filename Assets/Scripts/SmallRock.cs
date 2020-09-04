@@ -7,7 +7,6 @@ public class SmallRock : MonoBehaviour
 
     [SerializeField] float health = 1;
     [SerializeField] int scoreValue = 0;
-    [SerializeField] float explosionRadius = 3;
     [SerializeField] GameObject explosionPrefab;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,12 +30,10 @@ public class SmallRock : MonoBehaviour
 
     private void CreateExplosion()
     {
-        GameObject explosion = Instantiate(
+        GameObject Bomb = Instantiate(
             explosionPrefab,
             transform.position,
             Quaternion.identity)
             as GameObject;
-        explosion.GetComponent<Bomb>().SetRadius(explosionRadius);
-        explosion.GetComponent<Bomb>().Explode();
     }
 }
