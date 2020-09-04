@@ -30,7 +30,6 @@ public class DamageDealer : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(needToHit);
         if (needToHit == false)
         {
             StartCoroutine(WaitAndDestroy());
