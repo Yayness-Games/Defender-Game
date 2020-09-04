@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 4700296658218304062}
   - component: {fileID: 8296426248347448399}
   - component: {fileID: 7426425673237105545}
-  - component: {fileID: 5611305539564286398}
   - component: {fileID: -2336423128407542627}
-  - component: {fileID: 6526079244691371606}
+  - component: {fileID: 3409511246057223461}
+  - component: {fileID: -1285990539495097261}
   m_Layer: 12
-  m_Name: 2. The rock
+  m_Name: 2. The rock particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: be95304728ceb694d919f7c6b34e2f72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2bd0be7af194f3a4c921c220e51708ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a547934f2debf4442b8ad63ccbce0414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 500
+  damage: 200
+  waitBeforeDestroyed: 0
 --- !u!50 &7426425673237105545
 Rigidbody2D:
   serializedVersion: 4
@@ -121,7 +122,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &5611305539564286398
+--- !u!114 &-2336423128407542627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137573522465312092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6e12f96f9f57a44ac720a1ed219bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  rotationRandomness: 1
+--- !u!60 &3409511246057223461
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,29 +153,25 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.01, y: 0.84}
+    oldSize: {x: 0.43, y: 0.43}
     newSize: {x: 0.13, y: 0.37}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   m_Points:
     m_Paths:
-    - - {x: 0.49064395, y: 0.007011175}
-      - {x: 0.48894173, y: 0.01086688}
-      - {x: 0.4996472, y: 0.007164955}
-      - {x: 0.23626545, y: 0.40393686}
-      - {x: -0.3182363, y: 0.40929115}
-      - {x: -0.35697085, y: 0.32700682}
-      - {x: -0.4969709, y: -0.08118296}
-      - {x: -0.4675308, y: -0.13661408}
-      - {x: -0.24232358, y: -0.3985827}
-      - {x: 0.11601895, y: -0.2781086}
-      - {x: 0.18726194, y: -0.2878735}
-      - {x: 0.2769979, y: -0.28922153}
-      - {x: 0.3092329, y: -0.30842447}
-      - {x: 0.3361198, y: -0.3139367}
---- !u!114 &-2336423128407542627
+    - - {x: -0.1048221, y: 0.20789512}
+      - {x: -0.21322478, y: 0.062370516}
+      - {x: -0.14320159, y: -0.14597845}
+      - {x: -0.14221795, y: -0.1438114}
+      - {x: 0.0055942833, y: -0.21118191}
+      - {x: -0.00269109, y: -0.21144731}
+      - {x: 0.20458749, y: -0.076454}
+      - {x: 0.20434897, y: -0.07881808}
+      - {x: 0.1794966, y: 0.18651056}
+      - {x: 0.18192276, y: 0.18480404}
+--- !u!114 &-1285990539495097261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,29 +180,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2137573522465312092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b6e12f96f9f57a44ac720a1ed219bcc, type: 3}
+  m_Script: {fileID: 11500000, guid: e766df49632195e4dbb88c85704252ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
-  rotationRandomness: 0.25
---- !u!114 &6526079244691371606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137573522465312092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55b2fb59764b0724bb89eede0339ef14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particlePrefab: {fileID: 2137573522465312092, guid: 50943649347b06e4b8a0e76555e1e0ea,
+  health: 1
+  scoreValue: 0
+  explosionPrefab: {fileID: 2184315332553511625, guid: a6432c6214d12f646853b3f68d472f00,
     type: 3}
-  minParticles: 4
-  maxParticles: 5
-  minAngle: -1
-  maxAngle: 1
-  minSpeed: 1
-  maxSpeed: 3
-  rocks: 0

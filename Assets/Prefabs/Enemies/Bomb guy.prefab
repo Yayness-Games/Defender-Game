@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 36133008491537177}
   - component: {fileID: 5722804763987863081}
   m_Layer: 9
-  m_Name: 1. Rock guy
+  m_Name: Bomb guy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 523461193869032416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.98, y: 3.15, z: -3}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4b416b2b5a9a4da40a11ccdc203933ef, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5, g: 0.016037703, b: 0.016037703, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -110,14 +110,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a76f52393e1d34c4c907351ed422c9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 600
-  scoreValue: 450
+  health: 300
+  scoreValue: 200
   shotCounter: 0
-  minTimeBetweenShots: 5
-  maxTimeBetweenShots: 10
-  projectile: {fileID: 2137573522465312092, guid: 11b702f05f3e2ad45a7ab46d9d1eaa13,
+  minTimeBetweenShots: 2
+  maxTimeBetweenShots: 5
+  projectile: {fileID: 2137573522465312092, guid: c14062cf69ec6354598818c2679d982d,
     type: 3}
-  projectileSpeed: 1.5
+  projectileSpeed: 2
   explosionVFX: {fileID: 8699830588819135513, guid: 15e892dd3397ee64da791ddba93c680c,
     type: 3}
   durationOfExplosion: 1
