@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
+    [SerializeField] int enemiesThisLevel;
     [SerializeField] int Enemies;
     [SerializeField] float delayInSeconds = 2f;
 
@@ -58,6 +59,17 @@ public class Level : MonoBehaviour
     public void AddEnemies(int numberOfEnemies)
     {
         Enemies += numberOfEnemies;
+        enemiesThisLevel = Enemies;
+    }
+
+    public int GetEnemies()
+    {
+        return Enemies;
+    }
+
+    public int GetEnemiesThisLevel()
+    {
+        return enemiesThisLevel;
     }
 
     public void SubtractEnemy()
