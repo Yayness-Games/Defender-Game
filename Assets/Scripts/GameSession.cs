@@ -51,4 +51,9 @@ public class GameSession : MonoBehaviour
     {
         return level;
     }
+
+    public int GetNextLevel()
+    {
+        return level + 1;
+    }
 }
