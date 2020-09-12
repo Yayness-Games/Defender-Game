@@ -17,4 +17,14 @@ public class Item : MonoBehaviour
             GetComponentInParent<Shop>().addition(itemName);
         }
     }
+
+    public int GetItemCost()
+    {
+        return cost;
+    }
+
+    public string GetItemName()
+    {
+        return itemName;
+    }
 }
