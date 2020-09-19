@@ -9,7 +9,10 @@ public class Player : MonoBehaviour
     [SerializeField] bool invincible = false;
     [Header("Player")]
     [SerializeField] float moveSpeed = 10f;
-    [SerializeField] float padding = 1f;
+    [SerializeField] float leftPadding = 1f;
+    [SerializeField] float rightPadding = 1f;
+    [SerializeField] float topPadding = 1f;
+    [SerializeField] float bottomPadding = 1f;
     [SerializeField] int health = 200;
     [Header("Projectile")]
     [SerializeField] GameObject laserPrefab;
@@ -103,9 +106,9 @@ public class Player : MonoBehaviour
     private void SetUpMoveBoundaries()
     {
         Camera gameCamera = Camera.main;
-        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding;
-        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
-        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding;
-        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
+        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + leftPadding;
+        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - rightPadding;
+        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + bottomPadding;
+        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - topPadding;
     }
 }

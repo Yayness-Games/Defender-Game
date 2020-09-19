@@ -98,8 +98,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invincible: 0
   moveSpeed: 7.5
-  padding: 0.5
-  health: 3500
+  leftPadding: 0.7
+  rightPadding: 0.7
+  topPadding: 4.75
+  bottomPadding: 1
+  health: 1000
   laserPrefab: {fileID: 5010460558093087255, guid: 37ec59438d420ab4daa377f1414df7a4,
     type: 3}
   projectileSpeed: 7
