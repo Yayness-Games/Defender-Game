@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcddce8ae6140e34e8e87c5ef745662a, type: 3}
+  m_Name: L9W4
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 523461193869032416, guid: d65afe5e275c5c44f9292afdf6f0202b,
+    type: 3}
+  pathPrefab: {fileID: 1043509835402494993, guid: 3f0d1d4d906d3214fa1e136ca12e6373,
+    type: 3}
+  timeBetweenSpawns: 0.8521
+  spawnRandomFactor: 0.3
+  numberOfEnemies: 30
+  moveSpeed: 3
